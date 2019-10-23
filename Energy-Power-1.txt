@@ -1,0 +1,7 @@
+syms t
+xt=cos(2*pi*t).^4;
+period=0.5;
+energy=int(xt.^2,t,-inf,inf);
+fprintf('Energy of %s is %5.2f\n\n',xt,energy);
+power=1\(2*power)*int(xt.^2,t,-period,period);
+fprintf('Power of %s is %5.2f\n\n',xt,power);
