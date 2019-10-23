@@ -1,0 +1,13 @@
+#take input
+k=int(input("Enter the position at which you want to find fibonacci: "))
+#define a recursive function
+def fibonacci(n):
+#fibonacci series starts from 1
+  if n == 1:
+    return 1
+  elif n == 2:
+    return 1
+  else:
+    return (fibonacci(n - 1) + (fibonacci(n - 2)))
+#call the function and print it
+print(fibonacci(k))
