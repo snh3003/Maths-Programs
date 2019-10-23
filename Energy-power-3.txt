@@ -1,0 +1,7 @@
+syms n
+xn=(-2).^n*u[-n];
+period=0;
+energy=symsum(xn.^2,n,-inf,0);
+fprintf('energy of %s is %5.2f\n\n',xn,energy);
+power=1/(2*period)*symsum(xn.^2,n,-period,period);
+fprintf('power of %s is %5.2f\n\n',xn,power);
