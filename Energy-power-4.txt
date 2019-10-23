@@ -1,0 +1,7 @@
+syms n
+xn=cos(0.04*pi*n);
+period=50;
+energy=symsum(xn.^2,n,-inf,inf);
+fprintf('energy of %s is %5.2f\n\n',xn,energy);
+power=1/(2*power)*symsum(xn.^2,n,-period,period);
+fprintf('power of %s is %5.2f\n\n',xn,power);
