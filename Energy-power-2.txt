@@ -1,0 +1,4 @@
+syms t
+xt=e.^(-2*t)*cos(0.5*pi*t)*u(t)
+energy=int(xt.^2,t,-inf,inf);
+fprintf('energy of %s is %f\n\n',xt,energy);
